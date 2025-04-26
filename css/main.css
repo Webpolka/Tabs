@@ -1,0 +1,28 @@
+/* Скрываем все вкладки по умолчанию */
+.tabs-panel {
+  display: none; 
+}
+/* Показываем активную вкладку */
+.tabs-panel.is-active {
+  display: block; 
+  animation: fadeIn 0.5s ease-in-out; /* Анимация появления */
+}
+/* Кнопка */
+.tabs-nav button{
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+/* Активная кнопка */
+.tabs-nav button.is-active{
+  background-color: grey;
+  color: white;
+}
+/* Анимация */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
