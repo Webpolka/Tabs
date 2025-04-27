@@ -1,4 +1,4 @@
-import Tabs from "./tabs.js";
+import Tabs from "./js/tabs";
 
 window.addEventListener("DOMContentLoaded", function () {
   const tabInPage = document.querySelector("[data-tab]");
