@@ -1,19 +1,34 @@
+.container {
+  max-width: 1240px;
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+
 /* Скрываем все вкладки по умолчанию */
 .tabs-panel {
-  display: none; 
+  display: none;
 }
 /* Показываем активную вкладку */
 .tabs-panel.is-active {
-  display: block; 
+  display: block;
   animation: fadeIn 0.5s ease-in-out; /* Анимация появления */
 }
+
+.tabs-nav {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 3px solid #eee;
+}
 /* Кнопка */
-.tabs-nav button{
+.tabs-nav button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #eee;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
 /* Активная кнопка */
-.tabs-nav button.is-active{
+.tabs-nav button.is-active {
   background-color: grey;
   color: white;
 }
